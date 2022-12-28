@@ -1,5 +1,14 @@
 local plugins = {
 
+	["Pocco81/auto-save.nvim"] = {
+   config = function()
+      local present, auto_save = pcall(require, "auto_save")
+
+      if present then
+        auto_save.setup()
+      end
+    end
+  },
 
   ["nvim-lua/plenary.nvim"] = { module = "plenary" },
 
@@ -84,6 +93,7 @@ local plugins = {
     config = function()
       require "plugins.configs.treesitter"
     end,
+    ensure_installed = {"c", "lua"}
   },
 
   -- git stuff

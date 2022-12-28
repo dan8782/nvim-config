@@ -1,4 +1,5 @@
 local opt = vim.opt
+local keymap = vim.keymap
 local g = vim.g
 local config = require("core.utils").load_config()
 
@@ -52,6 +53,10 @@ opt.swapfile = false
 opt.whichwrap:append "<>[]hl"
 
 g.mapleader = " "
+
+--disable space and enter in normal mode
+keymap.set('n', '<Space>', '<NOP>')
+keymap.set('n', '<Enter>', '<NOP>')
 
 -- disable some builtin vim plugins
 local default_plugins = {
