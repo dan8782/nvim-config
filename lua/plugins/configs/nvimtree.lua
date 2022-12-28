@@ -24,12 +24,12 @@ local options = {
   },
   view = {
     adaptive_size = true,
-    side = "left",
+    side = "right",
     width = 25,
     hide_root_folder = true,
   },
   git = {
-    enable = false,
+    enable = true,
     ignore = true,
   },
   filesystem_watchers = {

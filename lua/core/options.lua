@@ -1,5 +1,6 @@
 local opt = vim.opt
 local g = vim.g
+local wo = vim.wo
 local config = require("core.utils").load_config()
 
 g.nvchad_theme = config.ui.theme
@@ -27,8 +28,10 @@ opt.mouse = "a"
 
 -- Numbers
 opt.number = true
-opt.numberwidth = 2
+opt.relativenumber = true
+opt.numberwidth = 3
 opt.ruler = false
+opt.scrolloff = 9
 
 -- disable nvim intro
 opt.shortmess:append "sI"
@@ -41,7 +44,8 @@ opt.timeoutlen = 400
 opt.undofile = true
 
 -- interval for writing swap file to disk, also used by gitsigns
-opt.updatetime = 250
+-- opt.updatetime = 250
+opt.swapfile = false
 
 -- go to previous/next line with h,l,left arrow and right arrow
 -- when cursor reaches end/beginning of line
