@@ -1,5 +1,6 @@
 local plugins = {
 
+
   ["nvim-lua/plenary.nvim"] = { module = "plenary" },
 
   ["lewis6991/impatient.nvim"] = {},

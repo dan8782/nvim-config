@@ -1,7 +1,7 @@
 local opt = vim.opt
 local g = vim.g
-local wo = vim.wo
 local config = require("core.utils").load_config()
+
 
 g.nvchad_theme = config.ui.theme
 g.toggle_theme_icon = "   "
