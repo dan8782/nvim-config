@@ -22,6 +22,7 @@ autocmd("FileType", {
 -- wrap the PackerSync command to warn people before using it in NvChadSnapshots
 autocmd("VimEnter", {
   callback = function()
+    vim.cmd "NvimTreeToggle" 
     vim.cmd "command! -nargs=* -complete=customlist,v:lua.require'packer'.plugin_complete PackerSync lua require('plugins') require('core.utils').packer_sync(<f-args>)"
   end,
 })

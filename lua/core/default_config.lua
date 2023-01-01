@@ -1,4 +1,3 @@
--- Chadrc overrides this file
 
 local M = {}
 
