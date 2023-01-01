@@ -64,4 +64,6 @@ lspconfig.sumneko_lua.setup {
   },
 }
 
+lspconfig.clangd.setup{}
+
 return M
