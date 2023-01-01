@@ -22,7 +22,7 @@ local options = {
       vertical = { location = "rightbelow", split_ratio = 0.5 },
     },
   },
-  behavio = {
+  behavior = {
     close_on_exit = true,
     auto_insert = true,
   },
