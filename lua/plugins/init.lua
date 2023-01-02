@@ -44,6 +44,17 @@ local plugins = {
     end,
   },
 
+  ["kylechui/nvim-surround"] = {
+    tag = "*",
+    config = function()
+      local present, surround = pcall(require, "nvim-surround")
+
+      if present then
+        surround.setup()
+      end
+    end
+  },
+
   ["NvChad/nvterm"] = {
     module = "nvterm",
     config = function()
