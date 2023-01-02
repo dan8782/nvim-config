@@ -362,7 +362,7 @@ M.nvterm = {
 
     ["<leader>cc"] = {
       function()
-        require("nvterm.terminal").send("clear && g++ -o out " .. vim.fn.expand "%" .. " && ./out", "horizontal")
+        require("nvterm.terminal").send("clear && gcc -o out " .. vim.fn.expand "%" .. " && ./out", "horizontal")
       end,
       "compile & run a cpp file",
     },
